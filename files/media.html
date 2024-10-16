@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--  fonts--> 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+     <!-- googlefonts for header-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+     <!-- script for awesome icons -->
+     <script src="https://kit.fontawesome.com/9ac40d3217.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <section class="header">
+        <div class="hed">
+            <div class="name">
+
+            </div>
+
+            <div class="opensidebar">
+                                    <!-- The sidebaroverlay -->
+                    <div id="myNav" class="sidebaroverlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                        <!-- Overlay content -->
+                        <div class="sidebaroverlaycontent">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                
+                                <li>   <button onclick="myFunction()" class="dropbtn">Tour</button>
+                                      
+                                    <div id="myDropdown" class="dropdowncontent">
+                                        <a href="">Kenya Safaris by Road</a>
+                                        <a href="">Kenya Flying Safaris</a>
+                                        <a href=""> Zanzibar Safaris</a>
+                                        <a href="">Tanzania Safaris</a>
+                                        <a href="">Uganda Safaris</a>
+                                        <a href="">Rwanda Safaris</a>
+                                    </div>
+                                </li>   
+                                  
+                                        <script>
+                                            /* When the user clicks on the button,
+                                            toggle between hiding and showing the dropdown content */
+                                            function myFunction() {
+                                            document.getElementById("myDropdown").classList.toggle("show");
+                                            }
+                                            
+                                            // Close the dropdown menu if the user clicks outside of it
+                                            window.onclick = function(event) {
+                                            if (!event.target.matches('.dropbtn')) {
+                                                var dropdowns = document.getElementsByClassName("dropdowncontent");
+                                                var i;
+                                                for (i = 0; i < dropdowns.length; i++) {
+                                                var openDropdown = dropdowns[i];
+                                                if (openDropdown.classList.contains('show')) {
+                                                    openDropdown.classList.remove('show');
+                                                }
+                                                }
+                                            }
+                                            }
+                                    </script>
+
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>  <button onclick="myFunction1()" class="dropbtn1">About us</button>
+                                      
+                                    <div id="myDropdown1" class="dropdowncontent1">
+                                      <a href="about.html">Our Company</a>
+                                      <a href="media.html">Media</a>
+                                    </div>
+
+                                    <script>
+                                        /* When the user clicks on the button,
+                                        toggle between hiding and showing the dropdown1 content */
+                                        function myFunction1() {
+                                        document.getElementById("myDropdown1").classList.toggle("show1");
+                                        }
+                                        
+                                        // Close the dropdown menu if the user clicks outside of it
+                                        window.onclick = function(event) {
+                                        if (!event.target.matches('.dropbtn1')) {
+                                            var dropdowns = document.getElementsByClassName("dropdowncontent1");
+                                            var i;
+                                            for (i = 0; i < dropdowns.length; i++) {
+                                            var openDropdown = dropdowns[i];
+                                            if (openDropdown.classList.contains('show1')) {
+                                                openDropdown.classList.remove('show1');
+                                            }
+                                            }
+                                        }
+                                        }
+                                </script>
+
+
+
+
+                                </li>    
+
+
+                                <li>  <a href="quote.html">REQUEST QUOTE</a></li>
+                            </ul>
+                        
+                       
+                      
+                        
+                      
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span class="bar" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+            </div>
+                    <!-- script foe opening menus -->
+                    <script>
+                            /* Open when someone clicks on the span element */
+                            function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                            }
+                            
+                            /* Close when someone clicks on the "x" symbol inside the overlay */
+                            function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                            }
+                        </script>
+        </div>
+        <nav>
+
+      
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="">
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li class="active"><a href="../index.html">HOME</a></li>
+                        <li><a href="">TOURS  <i class="fa fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Kenya Safaris by Road</a></li>
+                                    <li><a href="">Kenya Flying Safaris</a></li>
+                                    <li><a href=""> Zanzibar Safaris</a></li>
+                                    <li><a href="">Tanzania Safaris</a></li>
+                                    <li><a href="">Uganda Safaris</a></li>
+                                    <li><a href="">Rwanda Safaris</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">ABOUT US <i class="fa fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="about.html">Our Company</a></li>
+                                    <li><a href="media.html">Media</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li class="quote">  <a href="quote.html"> <font color="white">REQUEST A QUOTE</font> </a></li>
+                       
+                    </ul>
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>0114437661</p>
+                </div>
+        </nav>
+    </section>
+    <!-- end of header -->
+    
+    <section class="homepage">
+        <div class="banner">
+          <div class="slider">
+              <img src="../images/aboutbackgroundimage.jpg" alt="" id="slideimg">
+          </div>
+          <div class="overlay">
+             <div class="over">
+                  <h1>Kenya's Leading Tour And Travel Company</h1>
+                  <h1>KenVentures Tours & Travels</h1>
+                  <div class="btn">
+                      <button type="button">Photo & Videos</button>
+                  
+                  </div>
+                  
+             
+             </div>
+          </div>
+
+        </div>
+
+       
+
+
+    </section>
+    <!-- end of homepage section -->
+     <section class="gallery">
+        <h1>GALLERY</h1>
+        <div class="gallery1">
+            
+            <div class="image">
+                 <img src="../images/gallery1.webp" alt="">
+            </div>
+            <div class="image">
+                <img src="../images/gallery2.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="../images/gallery3.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="../images/gallery3.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="gallery1">
+             
+            <div class="image">
+                <img src="../images/gallery4.jpg" alt="">
+           </div>
+           <div class="image">
+            <img src="../images/gallery4.jpg" alt="">
+           </div>
+           <div class="image">
+               <img src="../images/gallery5.jpg" alt="">
+           </div>
+           <div class="image">
+               <img src="../images/gallery6.jpg" alt="">
+           </div>
+        </div>
+
+
+        <div class="gallery2">
+            <div class="video1">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5myfOaVzKw0?si=KBIguvHMiHyU4fOJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            
+           <div class="video1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3zUuxEiMcVo?si=GfanE7vY7R5uRmk1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+           
+
+        </div>
+
+       
+
+     </section>
+     
+  
+    
+    
+
+
+    <footer>
+        <div class="foot">
+            <div class="foot1">
+                <h2>Holiday Tour & Travels</h2>
+                <p>Kenya's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+
+            </div>
+            <div class="foot1">
+                <h2>Kenya's Leading Tour And <br>Travel Company</h2>
+                <p>kenadventures@gmail.com
+                    Nairobi, Kenya</p>
+                    <h2>Phone: +254 729-836-336</h2>
+                
+            </div>
+            <div class="foot1">
+                <h2>QUICK ACCESS</h2>
+                <p>Home</p>
+                <p>All Packages</p>
+                <p>All Destinations</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="foot1">
+                <h2>Follow with us</h2>
+                <p>Join the thousands of other followers on our social platforms and get our latest offers</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                
+            </div>
+
+        </div>
+       </footer>
+
+      
+     
+        
+       
+
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <!--  fonts--> 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <!-- googlefonts for header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+     <!-- script for awesome icons -->
+     <script src="https://kit.fontawesome.com/9ac40d3217.js" crossorigin="anonymous"></script>
+     <!-- javascrpt -->
+     <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body onload="slider()">
+
+
+
+
+   
+    
+  
+    
+   
+
+
+
+
+    <div id="preloader">
+
+    </div>
+    <!-- script for page loading -->
+     <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+     </script>
+    
+     
+
+    <div class="header">
+        <div class="hed">
+            <div class="name">
+
+            </div>
+
+            <div class="opensidebar">
+                                    <!-- The sidebaroverlay -->
+                    <div id="myNav" class="sidebaroverlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+                        <!-- Overlay content -->
+                        <div class="sidebaroverlaycontent">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                
+                                <li>   <button onclick="myFunction()" class="dropbtn">Tour</button>
+                                      
+                                    <div id="myDropdown" class="dropdowncontent">
+                                        <a href="">Kenya Safaris by Road</a>
+                                        <a href="">Kenya Flying Safaris</a>
+                                        <a href=""> Zanzibar Safaris</a>
+                                        <a href="">Tanzania Safaris</a>
+                                        <a href="">Uganda Safaris</a>
+                                        <a href="">Rwanda Safaris</a>
+                                    </div>
+                                </li>   
+                                  
+                                        <script>
+                                            /* When the user clicks on the button,
+                                            toggle between hiding and showing the dropdown content */
+                                            function myFunction() {
+                                            document.getElementById("myDropdown").classList.toggle("show");
+                                            }
+                                            
+                                            // Close the dropdown menu if the user clicks outside of it
+                                            window.onclick = function(event) {
+                                            if (!event.target.matches('.dropbtn')) {
+                                                var dropdowns = document.getElementsByClassName("dropdowncontent");
+                                                var i;
+                                                for (i = 0; i < dropdowns.length; i++) {
+                                                var openDropdown = dropdowns[i];
+                                                if (openDropdown.classList.contains('show')) {
+                                                    openDropdown.classList.remove('show');
+                                                }
+                                                }
+                                            }
+                                            }
+                                    </script>
+
+                                <li><a href="files/contact.html">Contact us</a></li>
+                                <li>  <button onclick="myFunction1()" class="dropbtn1">About us</button>
+                                      
+                                    <div id="myDropdown1" class="dropdowncontent1">
+                                      <a href="files/about.html">Our Company</a>
+                                      <a href="files/media.html">Media</a>
+                                    </div>
+
+                                    <script>
+                                        /* When the user clicks on the button,
+                                        toggle between hiding and showing the dropdown1 content */
+                                        function myFunction1() {
+                                        document.getElementById("myDropdown1").classList.toggle("show1");
+                                        }
+                                        
+                                        // Close the dropdown menu if the user clicks outside of it
+                                        window.onclick = function(event) {
+                                        if (!event.target.matches('.dropbtn1')) {
+                                            var dropdowns = document.getElementsByClassName("dropdowncontent1");
+                                            var i;
+                                            for (i = 0; i < dropdowns.length; i++) {
+                                            var openDropdown = dropdowns[i];
+                                            if (openDropdown.classList.contains('show1')) {
+                                                openDropdown.classList.remove('show1');
+                                            }
+                                            }
+                                        }
+                                        }
+                                </script>
+
+
+
+
+                                </li>    
+
+
+                                <li>  <a href="files/quote.html">REQUEST QUOTE</a></li>
+                            </ul>
+                        
+                       
+                      
+                        
+                      
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span class="bar" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+            </div>
+                    <!-- script foe opening menus -->
+                    <script>
+                            /* Open when someone clicks on the span element */
+                            function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                            }
+                            
+                            /* Close when someone clicks on the "x" symbol inside the overlay */
+                            function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                            }
+                        </script>
+        </div>
+        <nav>
+
+      
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="">
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="">TOURS  <i class="fa fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Kenya Safaris by Road</a></li>
+                                    <li><a href="">Kenya Flying Safaris</a></li>
+                                    <li><a href=""> Zanzibar Safaris</a></li>
+                                    <li><a href="">Tanzania Safaris</a></li>
+                                    <li><a href="">Uganda Safaris</a></li>
+                                    <li><a href="">Rwanda Safaris</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">ABOUT US <i class="fa fa-caret-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="files/about.html">Our Company</a></li>
+                                    <li><a href="files/media.html">Media</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="files/contact.html">CONTACT US</a></li>
+                        <li class="quote">  <a href="files/quote.html"> <font color="white">REQUEST A QUOTE</font> </a></li>
+                       
+                    </ul>
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>0114437661</p>
+                </div>
+        </nav>
+    </div>
+    <!-- end of header -->
+    
+        
+        <div class="homepage">
+          <div class="banner">
+            <div class="slider">
+                <img src="images/back.jpg" alt="" id="slideimg">
+            </div>
+            <div class="overlay">
+               <div class="over">
+                <h1>KenVentures <br> <span class="autoinput"></span></h1>
+                    <h3>ARE YOU READY TO TRAVEL?</h3>
+                    <!-- script for autotyping on homepag -->
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                    <script>
+                        var typed = new Typed(".autoinput",{
+                            strings:["Tours and Travels"],
+                            typedSpeed: 100,
+                            backSpeed: 100,
+                            loop: true
+                        }) 
+
+                    </script>
+
+
+                    <div class="btn">
+                        <a href="files/quote.html"><button type="button">BOOK NOW</button></a>
+                    
+                    </div>
+                    <div class="mediaicons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        
+                    </div>
+               
+               </div>
+            </div>
+
+          </div>
+
+         
+
+
+        </div>
+      <!-- end of homepage section -->
+       <section class="destinations">
+        <div class="title">
+            <h1>Popular <span> Destinations</span></h1>
+            <p>Explore the stunning landscapes and diverse wildlife of Kenya, from national reserve safaris to traditional Swahili culture. Immerse yourself in the unique experiences this destination has to offer.</p>
+        </div>
+        <div class="destiny">
+            <div class="destiny1">
+               <h2>Mombasa</h2>
+
+            </div>
+            <!-- end of destiny1 -->
+                
+            <div class="destiny2">
+                <div class="destiny21">
+                    <h2>Zanzibar</h2>
+                </div>
+                <div class="destiny22">
+                    <h2>Amboseli</h2>
+                </div>
+                <div class="destiny23">
+                    <h2>Kilimanjaro</h2>
+                </div>
+                <div class="destiny24">
+                    <h2>Naivasha</h2>
+                </div>
+
+            </div>
+            <!-- end of destiny2 -->
+        </div>
+        <!-- end of destiny -->
+
+       </section>
+       <!-- end of destinations -->
+
+
+       <section class="International">
+        <div class="heading">
+            <h1>International <span> Destinations </span></h1>
+            <p>Leading Tour Packages Booking website,Over 30,000 Hotel rooms worldwide. Book Hotel rooms and enjoy your holidays with distinctive experience</p>
+
+        </div>
+        <div class="interdes">
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/seychels.jpg" alt="">
+                <div class="content">
+                    <p>Seyschels</p>
+                    <div class="icons">
+                        <div class="dot">
+  
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/mauritias.jpg" alt="">
+                <div class="content">
+                    <p>Mauritius</p>
+                    <div class="icons">
+                      <div class="dot">
+
+                      </div>
+                      <div class="dot">
+                        
+                      </div>
+                      <div class="dot">
+                        
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/dubai.jpg" alt="">
+                <div class="content">
+                    <p>DUBAI</p>
+                    <div class="icons">
+                        <div class="dot">
+  
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/southafrica.jpg" alt="">
+                <div class="content">
+                    <p>SOUTH AFRICA</p>
+                    <div class="icons">
+                        <div class="dot">
+  
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/thailand.webp" alt="">
+                <div class="content">
+                    <p>Thailand</p>
+                    <div class="icons">
+                        <div class="dot">
+  
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="interdes1">
+                <button>30% OFF</button>
+                <img src="images/israel.jpg" alt="">
+                <div class="content">
+                    <p>Israel</p>
+                    <div class="icons">
+                        <div class="dot">
+  
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                        <div class="dot">
+                          
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+        </div>
+       
+
+       </section>
+       <!-- end of international -->
+
+       <section class="themedpackeges">
+
+        <div class="themehed">
+            <h1>Recommended <span>Themed</span>  Packages</h1>
+            <p>Leading tour and travels booking website. Over 3,000 packages worldwide. <br> Book travel packages and enjoy your holidays with distinctive experience</p>
+
+        </div>
+        <div class="packages">
+            <div class="package1">
+                <img src="images/china.jpg" alt="">
+                <div class="info">
+                    <p>10 Days 9 Nights China</p>
+                    <h2>10 Days / 9 Nights</h2>
+                    <button>MORE INFO</button>
+                </div>
+
+            </div>
+            
+            <div class="package1">
+                <img src="images/thailand.jpeg" alt="">
+                <div class="info">
+                    <p>7 Days 6 Nights 2024 Thailand</p>
+                <h2>7 Days / 6 Nights</h2>
+                <button>MORE INFO</button>
+                </div>
+                
+            </div>
+
+            <div class="package1">
+                <img src="images/israel.jpg" alt="">
+                <div class="info">
+                    <p>7 Days 6 Nights 2024 Israel</p>
+                <h2>7 Days / 6 Nights</h2>
+                <button>MORE INFO</button>
+                </div>
+                
+            </div>
+
+            <div class="package1">
+                <img src="images/southafrica.jpg" alt="">
+                <div class="info">
+                    <p>7 Days 6 Nights 2024 Southafrica</p>
+                <h2>7 Days / 6 Nights</h2>
+                <button>MORE INFO</button>
+                </div>
+                
+            </div>
+
+
+
+            <div class="package1">
+                <img src="images/chrisydubai.jpeg" alt="">
+                <div class="info">
+                    <p>6 Days 5 Nights in Dubai</p>
+            
+                    <h2>6 Days / 5 Nights</h2>
+                    <button>MORE INFO</button>
+    
+                </div>
+                
+                
+            </div>
+            <div class="package1">
+                <img src="images/mombasa.jpg" alt="">
+                <div class="info">
+                    <p>2024 Coast Christmas Package</p>
+                    <p></p>
+                    <h2>5 Days / 4 Nights</h2>
+                    <button>MORE INFO</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+       </section>
+
+       <!-- end of packages -->
+
+       <section class="offers">
+        <div class="offershed">
+            <h1>Special <span>Offers & Discount!</span> </h1>
+            <p>KenVentures Is an award-winning team that offers round the clock support during your trip and 100% financial protection so you know you are in safe hands. With us you can dream, book and travel carefree.</p>
+        </div>
+        <!-- start of theoffers -->
+        <div class="theoffers">
+            <!-- start of offer1 -->
+            <div class="offer1">
+                <div class="image">
+                     <p>Romantic Holiday</p>
+                </div>
+                <div class="description">
+                    <h5>Luxury Island Honeymoon</h5>
+                    <p>Category: Romantic Holiday</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer1 -->
+
+             <!-- start of offer2 -->
+             <div class="offer2">
+                <div class="image">
+                     <p>Birthday Package</p>
+                </div>
+                <div class="description">
+                    <h5>Safari For Your Birthday</h5>
+                    <p>Category:Birthday Package</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer2 -->
+
+             <!-- start of offer3 -->
+             <div class="offer3">
+                <div class="image">
+                     <p>School Holiday Deals</p>
+                </div>
+                <div class="description">
+                    <h5>Snorkeling Tours In Kenya</h5>
+                    <p>Category: School Holiday</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer3 -->
+
+             <!-- start of offer4 -->
+             <div class="offer4">
+                <div class="image">
+                    <p>Corporate And Conference</p>
+                    
+                     
+                </div>
+                <div class="description">
+                    <h5>Team Bilding</h5>
+                    <p>Category:Corporate</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer4 -->
+
+
+            <!-- start of offer4 -->
+            <div class="offer5">
+                <div class="image">
+                    <p>Corporate And Conference</p>
+                    
+                     
+                </div>
+                <div class="description">
+                    <h5>Team Bilding</h5>
+                    <p>Category:Corporate</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer4 -->
+             <!-- start of offer4 -->
+             <div class="offer6">
+                <div class="image">
+                    <p>Corporate And Conference</p>
+                    
+                     
+                </div>
+                <div class="description">
+                    <h5>Team Bilding</h5>
+                    <p>Category:Corporate</p>
+                     <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                     </div>
+                </div>
+            </div>
+            <!-- end of offer4 -->
+        </div>
+        <!-- end of the offers -->
+
+       </section>
+       <!-- end of offers -->
+        <!-- auto increase of numbers -->
+     <div class="increasenumbers">
+        <article>
+            <i class="fa-solid fa-person"></i>
+            <span class="number" data-value="500">500+</span>
+            <p>new vistors everyweek</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-face-smile"></i>
+            <span class="number" data-value="1500">1500K+</span>
+            <p>happy customers every year</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-award"></i>
+            <span class="number" data-value="2500">2500+</span>
+            <p>won amazing awards</p>
+        </article>
+        <article>
+            <i class="fa-solid fa-newspaper"></i>
+            <span class="number" data-value="2500">2500+</span>
+            <p>new listings everyweek</p>
+        </article>
+     </div>
+
+
+        <!-- partners -->
+         <section class="partners">
+            <div class="partnershed">
+                <h1>KenVentures</h1>
+                <h1>Trusted by all travel brands</h1>
+            </div>
+            <div class="partnersbrand">
+                <img src="images/tripadvisor.png" alt="">
+                <img src="images/safaribookings.png" alt="">
+                <img src="images/travellife.png" alt="">
+                <img src="images/africansafaris.png" alt="">
+                <img src="images/safarideal.png" alt="">
+                <img src="images/toskenya.png" alt="">
+                <img src="images/kenya-wildlife-service.png" alt="">
+
+            </div>
+
+         </section>
+
+
+         <!-- end of partners -->
+
+
+
+
+
+        <section>
+
+       <footer>
+        <div class="foot">
+            <div class="foot1">
+                <h2>Holiday Tour & Travels</h2>
+                <p>Kenya's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+
+            </div>
+            <div class="foot1">
+                <h2>Kenya's Leading Tour And <br>Travel Company</h2>
+                <p>kenadventures@gmail.com
+                    Nairobi, Kenya</p>
+                    <h2>Phone: +254 729-836-336</h2>
+                
+            </div>
+            <div class="foot1">
+                <h2>QUICK ACCESS</h2>
+                <p>Home</p>
+                <p>All Packages</p>
+                <p>All Destinations</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="foot1">
+                <h2>Follow with us</h2>
+                <p>Join the thousands of other followers on our social platforms and get our latest offers</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                
+            </div>
+
+        </div>
+       
+       </footer>
+    </section>
+
+       <!-- //image sliders javascript -->
+       <script>
+        
+
+            var slideimg = document.getElementById("slideimg");
+            var images = new Array(
+                "images/slider1.jpg",
+                "images/slider2.jpg",
+                "images/slider3.jpg",
+                "images/slider4.webp"
+                
+            );
+            var len = images.length;
+            var i = 0;
+            function slider(){
+                if(i > len - 1){
+                    i = 0;
+                }
+                slideimg.src = images[i];
+                i++;
+                setTimeout('slider()',2500);
+            }
+
+      </script>
+
+</body>
+</html>
